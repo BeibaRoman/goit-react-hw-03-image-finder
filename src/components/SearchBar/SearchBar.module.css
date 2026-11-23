@@ -1,0 +1,56 @@
+.searchbar {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+  background: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.button {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%231f2430' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E")
+    center / 22px no-repeat;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.button:hover,
+.button:focus-visible {
+  opacity: 1;
+}
+
+/* текст «Search» лишається для скрінрідерів, але візуально прихований */
+.buttonLabel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding-right: 16px;
+  font-size: 18px;
+  outline: none;
+}
+
+.input:focus-visible {
+  outline: none;
+}

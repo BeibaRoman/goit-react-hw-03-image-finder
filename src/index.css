@@ -1,4 +1,16 @@
 /* =========================
+   0. Variables
+========================= */
+:root {
+  --bg: #f4f5f7;
+  --surface: #fff;
+  --accent: #3f51b5;
+  --accent-hover: #303f9f;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+/* =========================
    1. Box sizing
 ========================= */
 *,
@@ -42,6 +54,7 @@ body {
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   color: #222;
+  background: var(--bg);
 }
 
 /* =========================
@@ -136,4 +149,9 @@ table {
   max-width: 79.375rem; /* 1270px */
   margin: 0 auto;
   padding: 0 0.9375rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }

@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-template-vite",
+  "name": "goit-react-hw-03-image-finder",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://BeibaRoman.github.io/react-homework-template-vite",
+  "homepage": "https://BeibaRoman.github.io/goit-react-hw-03-image-finder",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,7 +15,9 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "react-loader-spinner": "^8.0.2",
+    "react-toastify": "^11.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
